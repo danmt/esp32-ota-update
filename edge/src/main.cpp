@@ -43,13 +43,12 @@ void setup()
 {
   Serial.begin(115200);
   connectWiFi(WIFI_SSID, WIFI_PASSWORD);
-}
-
-void loop()
-{
   Serial.print("version ");
   Serial.println(version);
 
   getFirmware();
-  delay(10000);
+}
+
+void loop()
+{
 }
